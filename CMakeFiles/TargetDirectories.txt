@@ -1,0 +1,7 @@
+/workspace/CMakeFiles/rebuild_cache.dir
+/workspace/CMakeFiles/edit_cache.dir
+/workspace/CMakeFiles/flash.dir
+/workspace/CMakeFiles/eeprom.dir
+/workspace/CMakeFiles/hex.dir
+/workspace/CMakeFiles/strip.dir
+/workspace/CMakeFiles/ams-function-generator.dir

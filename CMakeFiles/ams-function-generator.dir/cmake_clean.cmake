@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj"
+  "CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj.d"
   "CMakeFiles/ams-function-generator.dir/source/main.c.obj"
   "CMakeFiles/ams-function-generator.dir/source/main.c.obj.d"
   "ams-function-generator.eeprom"

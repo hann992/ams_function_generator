@@ -67,7 +67,7 @@ include CMakeFiles/flash.dir/compiler_depend.make
 include CMakeFiles/flash.dir/progress.make
 
 CMakeFiles/flash:
-	avrdude -c usbasp -p atmega328p -U flash:w:ams-function-generator.hex
+	avrdude -c usbasp -p atmega2560 -U flash:w:ams-function-generator.hex
 
 flash: CMakeFiles/flash
 flash: CMakeFiles/flash.dir/build.make

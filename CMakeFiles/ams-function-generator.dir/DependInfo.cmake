@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/workspace/source/TFTdriver1.c" "CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj" "gcc" "CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj.d"
   "/workspace/source/main.c" "CMakeFiles/ams-function-generator.dir/source/main.c.obj" "gcc" "CMakeFiles/ams-function-generator.dir/source/main.c.obj.d"
   )
 

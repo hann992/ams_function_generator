@@ -6,5 +6,5 @@ C_DEFINES = -DF_CPU=16000000
 
 C_INCLUDES = -I/workspace/include
 
-C_FLAGS = -mmcu=atmega328p -gstabs -g -ggdb -DF_CPU=16000000 -DBAUD=9600 -Os -lm -lprintf_flt -Wall -Wstrict-prototypes -Wl,--gc-sections -Wl,--relax -std=gnu99 -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -ffunction-sections -fdata-sections
+C_FLAGS = -mmcu=atmega2560 -gstabs -g -ggdb -DF_CPU=16000000 -DBAUD=9600 -Os -lm -lprintf_flt -Wall -Wstrict-prototypes -Wl,--gc-sections -Wl,--relax -std=gnu99 -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums -ffunction-sections -fdata-sections
 

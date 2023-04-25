@@ -181,6 +181,30 @@ ams-function-generator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/build
 .PHONY : ams-function-generator/fast
 
+source/TFTdriver1.obj: source/TFTdriver1.c.obj
+.PHONY : source/TFTdriver1.obj
+
+# target to build an object file
+source/TFTdriver1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj
+.PHONY : source/TFTdriver1.c.obj
+
+source/TFTdriver1.i: source/TFTdriver1.c.i
+.PHONY : source/TFTdriver1.i
+
+# target to preprocess a source file
+source/TFTdriver1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.i
+.PHONY : source/TFTdriver1.c.i
+
+source/TFTdriver1.s: source/TFTdriver1.c.s
+.PHONY : source/TFTdriver1.s
+
+# target to generate assembly for a file
+source/TFTdriver1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.s
+.PHONY : source/TFTdriver1.c.s
+
 source/main.obj: source/main.c.obj
 .PHONY : source/main.obj
 
@@ -218,6 +242,9 @@ help:
 	@echo "... hex"
 	@echo "... strip"
 	@echo "... ams-function-generator"
+	@echo "... source/TFTdriver1.obj"
+	@echo "... source/TFTdriver1.i"
+	@echo "... source/TFTdriver1.s"
 	@echo "... source/main.obj"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

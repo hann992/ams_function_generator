@@ -37,4 +37,5 @@ Hvis du er udenfor containeren, og vil genåbne den, så tryk F1, og skriv og k�
 ### OBS OBS:
 Vi bruger desværre ikke WSL, så når du er inde i containeren, og vil slette, skabe, el. flytte filer, så er det pokkers langsomt!
 Skal du copy + paste en masse filer ind, så er det nemmere at gå ud af containeren, og gøre det der. Ellers bare vis tålmodighed ;-)
+Frederik was here
 

@@ -181,29 +181,53 @@ ams-function-generator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/build
 .PHONY : ams-function-generator/fast
 
-source/TFTdriver1.obj: source/TFTdriver1.c.obj
-.PHONY : source/TFTdriver1.obj
+source/TFT_touch_driver.obj: source/TFT_touch_driver.c.obj
+.PHONY : source/TFT_touch_driver.obj
 
 # target to build an object file
-source/TFTdriver1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.obj
-.PHONY : source/TFTdriver1.c.obj
+source/TFT_touch_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj
+.PHONY : source/TFT_touch_driver.c.obj
 
-source/TFTdriver1.i: source/TFTdriver1.c.i
-.PHONY : source/TFTdriver1.i
+source/TFT_touch_driver.i: source/TFT_touch_driver.c.i
+.PHONY : source/TFT_touch_driver.i
 
 # target to preprocess a source file
-source/TFTdriver1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.i
-.PHONY : source/TFTdriver1.c.i
+source/TFT_touch_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.i
+.PHONY : source/TFT_touch_driver.c.i
 
-source/TFTdriver1.s: source/TFTdriver1.c.s
-.PHONY : source/TFTdriver1.s
+source/TFT_touch_driver.s: source/TFT_touch_driver.c.s
+.PHONY : source/TFT_touch_driver.s
 
 # target to generate assembly for a file
-source/TFTdriver1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver1.c.s
-.PHONY : source/TFTdriver1.c.s
+source/TFT_touch_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.s
+.PHONY : source/TFT_touch_driver.c.s
+
+source/TFTdriver.obj: source/TFTdriver.c.obj
+.PHONY : source/TFTdriver.obj
+
+# target to build an object file
+source/TFTdriver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj
+.PHONY : source/TFTdriver.c.obj
+
+source/TFTdriver.i: source/TFTdriver.c.i
+.PHONY : source/TFTdriver.i
+
+# target to preprocess a source file
+source/TFTdriver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.i
+.PHONY : source/TFTdriver.c.i
+
+source/TFTdriver.s: source/TFTdriver.c.s
+.PHONY : source/TFTdriver.s
+
+# target to generate assembly for a file
+source/TFTdriver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.s
+.PHONY : source/TFTdriver.c.s
 
 source/main.obj: source/main.c.obj
 .PHONY : source/main.obj
@@ -229,6 +253,30 @@ source/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/main.c.s
 .PHONY : source/main.c.s
 
+source/uart.obj: source/uart.c.obj
+.PHONY : source/uart.obj
+
+# target to build an object file
+source/uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/uart.c.obj
+.PHONY : source/uart.c.obj
+
+source/uart.i: source/uart.c.i
+.PHONY : source/uart.i
+
+# target to preprocess a source file
+source/uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/uart.c.i
+.PHONY : source/uart.c.i
+
+source/uart.s: source/uart.c.s
+.PHONY : source/uart.s
+
+# target to generate assembly for a file
+source/uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/uart.c.s
+.PHONY : source/uart.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,12 +290,18 @@ help:
 	@echo "... hex"
 	@echo "... strip"
 	@echo "... ams-function-generator"
-	@echo "... source/TFTdriver1.obj"
-	@echo "... source/TFTdriver1.i"
-	@echo "... source/TFTdriver1.s"
+	@echo "... source/TFT_touch_driver.obj"
+	@echo "... source/TFT_touch_driver.i"
+	@echo "... source/TFT_touch_driver.s"
+	@echo "... source/TFTdriver.obj"
+	@echo "... source/TFTdriver.i"
+	@echo "... source/TFTdriver.s"
 	@echo "... source/main.obj"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/uart.obj"
+	@echo "... source/uart.i"
+	@echo "... source/uart.s"
 .PHONY : help
 
 

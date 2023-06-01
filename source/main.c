@@ -1,66 +1,48 @@
 #include <avr/io.h>
 #define F_CPU 16000000
 #include <util/delay.h>
-#include "TFTdriver.h"
-#include "TFT_touch_driver.h"
 #include "uart.h"
 #include <avr/interrupt.h>
 #include <stdlib.h>
+#include "pwm.h"
+#include "liquid_crystal_i2c.h"
+#include "i2c_master.h"
 
-volatile int x_coord = 120;
-volatile int y_coord = 160;
-volatile int new_coords = 0;
 
 int main(void)
 {
-  // Initialize the display
-  DisplayInit();
-  // All pixels white (background)
-  FillRectangle(0,0,320,240,31,63,31);
+    InitUART();
 
-  // Draw red parts of danish flag
-  //FillRectangle(0,140,100,100,31,0,0);
-  //FillRectangle(0,0,100,100,31,0,0);
-  //FillRectangle(140,0,320-140,100,31,0,0);
-  //FillRectangle(140,140,320-140,100,31,0,0); 
-
-  DisplayOn();
-
-  sei();
-  
-
-  while(1)
-  {
-    // Draw screen
-    FillRectangle(x_coord,y_coord,20,20,31,0,0);
-
-    // Done drawing, now listen for touch input:
-    XPT2046_init();
-    while(new_coords == 0){
-      // Waiting for input
-    }
-    // We got an input, now disable touch while we draw again!
-    XPT2046_uninit();
+    i2c_master_init(I2C_SCL_FREQUENCY_100);
     
-    // Reset new coordinate variable
-    new_coords = 0;
-  } 
+    LiquidCrystalDevice_t device = lq_init(0x27, 20, 4, LCD_5x8DOTS); // intialize 4-lines display
+    lq_turnOnBacklight(&device); // simply turning on the backlight
+    lq_setCursor(&device, 0, 4);
+    lq_print(&device, "DC MOTOR");
+    lq_setCursor(&device, 1, 4);
+    lq_print(&device, "SERVO MOTOR");
+    lq_setCursor(&device, 2, 4);
+    lq_print(&device, "STEPPER MOTOR");
+
+
+
+    // Setup encoder interrupts
+    setupInterrupts();
+    
+    // Enable global interrupts
+    sei();
+
+    
+    while (1) {
+
+
+        SendString("Direction: ");
+        SendInteger(getDirection());
+        SendString("\r\n");     
+        SendString("\r\n");    
+        _delay_ms(100);
+    }
+
+    return 0;
 }
 
-
-void update_coords(int *x, int *y){
-    uint16_t x_raw = XPT2046_read(0xD0);
-    uint16_t y_raw = XPT2046_read(0x90);
-
-    x_coord = (x_raw - 1600)/118;
-    y_coord = (y_raw - 2700)/85;
-
-    _delay_ms(10);
-
-}
-
-ISR(INT4_vect)
-{
-  update_coords(&x_coord, &y_coord);
-  new_coords = 1;
-}

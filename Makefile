@@ -181,53 +181,101 @@ ams-function-generator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/build
 .PHONY : ams-function-generator/fast
 
-source/TFT_touch_driver.obj: source/TFT_touch_driver.c.obj
-.PHONY : source/TFT_touch_driver.obj
+source/encoder.obj: source/encoder.c.obj
+.PHONY : source/encoder.obj
 
 # target to build an object file
-source/TFT_touch_driver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj
-.PHONY : source/TFT_touch_driver.c.obj
+source/encoder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/encoder.c.obj
+.PHONY : source/encoder.c.obj
 
-source/TFT_touch_driver.i: source/TFT_touch_driver.c.i
-.PHONY : source/TFT_touch_driver.i
+source/encoder.i: source/encoder.c.i
+.PHONY : source/encoder.i
 
 # target to preprocess a source file
-source/TFT_touch_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.i
-.PHONY : source/TFT_touch_driver.c.i
+source/encoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/encoder.c.i
+.PHONY : source/encoder.c.i
 
-source/TFT_touch_driver.s: source/TFT_touch_driver.c.s
-.PHONY : source/TFT_touch_driver.s
+source/encoder.s: source/encoder.c.s
+.PHONY : source/encoder.s
 
 # target to generate assembly for a file
-source/TFT_touch_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.s
-.PHONY : source/TFT_touch_driver.c.s
+source/encoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/encoder.c.s
+.PHONY : source/encoder.c.s
 
-source/TFTdriver.obj: source/TFTdriver.c.obj
-.PHONY : source/TFTdriver.obj
+source/i2c_master.obj: source/i2c_master.c.obj
+.PHONY : source/i2c_master.obj
 
 # target to build an object file
-source/TFTdriver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj
-.PHONY : source/TFTdriver.c.obj
+source/i2c_master.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj
+.PHONY : source/i2c_master.c.obj
 
-source/TFTdriver.i: source/TFTdriver.c.i
-.PHONY : source/TFTdriver.i
+source/i2c_master.i: source/i2c_master.c.i
+.PHONY : source/i2c_master.i
 
 # target to preprocess a source file
-source/TFTdriver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.i
-.PHONY : source/TFTdriver.c.i
+source/i2c_master.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/i2c_master.c.i
+.PHONY : source/i2c_master.c.i
 
-source/TFTdriver.s: source/TFTdriver.c.s
-.PHONY : source/TFTdriver.s
+source/i2c_master.s: source/i2c_master.c.s
+.PHONY : source/i2c_master.s
 
 # target to generate assembly for a file
-source/TFTdriver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.s
-.PHONY : source/TFTdriver.c.s
+source/i2c_master.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/i2c_master.c.s
+.PHONY : source/i2c_master.c.s
+
+source/lcd_menu.obj: source/lcd_menu.c.obj
+.PHONY : source/lcd_menu.obj
+
+# target to build an object file
+source/lcd_menu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj
+.PHONY : source/lcd_menu.c.obj
+
+source/lcd_menu.i: source/lcd_menu.c.i
+.PHONY : source/lcd_menu.i
+
+# target to preprocess a source file
+source/lcd_menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.i
+.PHONY : source/lcd_menu.c.i
+
+source/lcd_menu.s: source/lcd_menu.c.s
+.PHONY : source/lcd_menu.s
+
+# target to generate assembly for a file
+source/lcd_menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.s
+.PHONY : source/lcd_menu.c.s
+
+source/liquid_crystal_i2c.obj: source/liquid_crystal_i2c.c.obj
+.PHONY : source/liquid_crystal_i2c.obj
+
+# target to build an object file
+source/liquid_crystal_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj
+.PHONY : source/liquid_crystal_i2c.c.obj
+
+source/liquid_crystal_i2c.i: source/liquid_crystal_i2c.c.i
+.PHONY : source/liquid_crystal_i2c.i
+
+# target to preprocess a source file
+source/liquid_crystal_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.i
+.PHONY : source/liquid_crystal_i2c.c.i
+
+source/liquid_crystal_i2c.s: source/liquid_crystal_i2c.c.s
+.PHONY : source/liquid_crystal_i2c.s
+
+# target to generate assembly for a file
+source/liquid_crystal_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.s
+.PHONY : source/liquid_crystal_i2c.c.s
 
 source/main.obj: source/main.c.obj
 .PHONY : source/main.obj
@@ -252,6 +300,54 @@ source/main.s: source/main.c.s
 source/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/main.c.s
 .PHONY : source/main.c.s
+
+source/pwm.obj: source/pwm.c.obj
+.PHONY : source/pwm.obj
+
+# target to build an object file
+source/pwm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/pwm.c.obj
+.PHONY : source/pwm.c.obj
+
+source/pwm.i: source/pwm.c.i
+.PHONY : source/pwm.i
+
+# target to preprocess a source file
+source/pwm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/pwm.c.i
+.PHONY : source/pwm.c.i
+
+source/pwm.s: source/pwm.c.s
+.PHONY : source/pwm.s
+
+# target to generate assembly for a file
+source/pwm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/pwm.c.s
+.PHONY : source/pwm.c.s
+
+source/spi.obj: source/spi.c.obj
+.PHONY : source/spi.obj
+
+# target to build an object file
+source/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/spi.c.obj
+.PHONY : source/spi.c.obj
+
+source/spi.i: source/spi.c.i
+.PHONY : source/spi.i
+
+# target to preprocess a source file
+source/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/spi.c.i
+.PHONY : source/spi.c.i
+
+source/spi.s: source/spi.c.s
+.PHONY : source/spi.s
+
+# target to generate assembly for a file
+source/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ams-function-generator.dir/build.make CMakeFiles/ams-function-generator.dir/source/spi.c.s
+.PHONY : source/spi.c.s
 
 source/uart.obj: source/uart.c.obj
 .PHONY : source/uart.obj
@@ -290,15 +386,27 @@ help:
 	@echo "... hex"
 	@echo "... strip"
 	@echo "... ams-function-generator"
-	@echo "... source/TFT_touch_driver.obj"
-	@echo "... source/TFT_touch_driver.i"
-	@echo "... source/TFT_touch_driver.s"
-	@echo "... source/TFTdriver.obj"
-	@echo "... source/TFTdriver.i"
-	@echo "... source/TFTdriver.s"
+	@echo "... source/encoder.obj"
+	@echo "... source/encoder.i"
+	@echo "... source/encoder.s"
+	@echo "... source/i2c_master.obj"
+	@echo "... source/i2c_master.i"
+	@echo "... source/i2c_master.s"
+	@echo "... source/lcd_menu.obj"
+	@echo "... source/lcd_menu.i"
+	@echo "... source/lcd_menu.s"
+	@echo "... source/liquid_crystal_i2c.obj"
+	@echo "... source/liquid_crystal_i2c.i"
+	@echo "... source/liquid_crystal_i2c.s"
 	@echo "... source/main.obj"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/pwm.obj"
+	@echo "... source/pwm.i"
+	@echo "... source/pwm.s"
+	@echo "... source/spi.obj"
+	@echo "... source/spi.i"
+	@echo "... source/spi.s"
 	@echo "... source/uart.obj"
 	@echo "... source/uart.i"
 	@echo "... source/uart.s"

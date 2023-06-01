@@ -69,38 +69,66 @@ include CMakeFiles/ams-function-generator.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ams-function-generator.dir/flags.make
 
-CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
-CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj: source/TFT_touch_driver.c
-CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj -MF CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj -c /workspace/source/TFT_touch_driver.c
+CMakeFiles/ams-function-generator.dir/source/encoder.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/encoder.c.obj: source/encoder.c
+CMakeFiles/ams-function-generator.dir/source/encoder.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ams-function-generator.dir/source/encoder.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/encoder.c.obj -MF CMakeFiles/ams-function-generator.dir/source/encoder.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/encoder.c.obj -c /workspace/source/encoder.c
 
-CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.i"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/TFT_touch_driver.c > CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.i
+CMakeFiles/ams-function-generator.dir/source/encoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/encoder.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/encoder.c > CMakeFiles/ams-function-generator.dir/source/encoder.c.i
 
-CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.s"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/TFT_touch_driver.c -o CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.s
+CMakeFiles/ams-function-generator.dir/source/encoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/encoder.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/encoder.c -o CMakeFiles/ams-function-generator.dir/source/encoder.c.s
 
-CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
-CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj: source/TFTdriver.c
-CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj -MF CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj -c /workspace/source/TFTdriver.c
+CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj: source/i2c_master.c
+CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj -MF CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj -c /workspace/source/i2c_master.c
 
-CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.i"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/TFTdriver.c > CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.i
+CMakeFiles/ams-function-generator.dir/source/i2c_master.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/i2c_master.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/i2c_master.c > CMakeFiles/ams-function-generator.dir/source/i2c_master.c.i
 
-CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.s"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/TFTdriver.c -o CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.s
+CMakeFiles/ams-function-generator.dir/source/i2c_master.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/i2c_master.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/i2c_master.c -o CMakeFiles/ams-function-generator.dir/source/i2c_master.c.s
+
+CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj: source/lcd_menu.c
+CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj -MF CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj -c /workspace/source/lcd_menu.c
+
+CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/lcd_menu.c > CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.i
+
+CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/lcd_menu.c -o CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.s
+
+CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj: source/liquid_crystal_i2c.c
+CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj -MF CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj -c /workspace/source/liquid_crystal_i2c.c
+
+CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/liquid_crystal_i2c.c > CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.i
+
+CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/liquid_crystal_i2c.c -o CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.s
 
 CMakeFiles/ams-function-generator.dir/source/main.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
 CMakeFiles/ams-function-generator.dir/source/main.c.obj: source/main.c
 CMakeFiles/ams-function-generator.dir/source/main.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ams-function-generator.dir/source/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ams-function-generator.dir/source/main.c.obj"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/main.c.obj -MF CMakeFiles/ams-function-generator.dir/source/main.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/main.c.obj -c /workspace/source/main.c
 
 CMakeFiles/ams-function-generator.dir/source/main.c.i: cmake_force
@@ -111,10 +139,38 @@ CMakeFiles/ams-function-generator.dir/source/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/main.c.s"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/main.c -o CMakeFiles/ams-function-generator.dir/source/main.c.s
 
+CMakeFiles/ams-function-generator.dir/source/pwm.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/pwm.c.obj: source/pwm.c
+CMakeFiles/ams-function-generator.dir/source/pwm.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ams-function-generator.dir/source/pwm.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/pwm.c.obj -MF CMakeFiles/ams-function-generator.dir/source/pwm.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/pwm.c.obj -c /workspace/source/pwm.c
+
+CMakeFiles/ams-function-generator.dir/source/pwm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/pwm.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/pwm.c > CMakeFiles/ams-function-generator.dir/source/pwm.c.i
+
+CMakeFiles/ams-function-generator.dir/source/pwm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/pwm.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/pwm.c -o CMakeFiles/ams-function-generator.dir/source/pwm.c.s
+
+CMakeFiles/ams-function-generator.dir/source/spi.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
+CMakeFiles/ams-function-generator.dir/source/spi.c.obj: source/spi.c
+CMakeFiles/ams-function-generator.dir/source/spi.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ams-function-generator.dir/source/spi.c.obj"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/spi.c.obj -MF CMakeFiles/ams-function-generator.dir/source/spi.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/spi.c.obj -c /workspace/source/spi.c
+
+CMakeFiles/ams-function-generator.dir/source/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ams-function-generator.dir/source/spi.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/source/spi.c > CMakeFiles/ams-function-generator.dir/source/spi.c.i
+
+CMakeFiles/ams-function-generator.dir/source/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ams-function-generator.dir/source/spi.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/source/spi.c -o CMakeFiles/ams-function-generator.dir/source/spi.c.s
+
 CMakeFiles/ams-function-generator.dir/source/uart.c.obj: CMakeFiles/ams-function-generator.dir/flags.make
 CMakeFiles/ams-function-generator.dir/source/uart.c.obj: source/uart.c
 CMakeFiles/ams-function-generator.dir/source/uart.c.obj: CMakeFiles/ams-function-generator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ams-function-generator.dir/source/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ams-function-generator.dir/source/uart.c.obj"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ams-function-generator.dir/source/uart.c.obj -MF CMakeFiles/ams-function-generator.dir/source/uart.c.obj.d -o CMakeFiles/ams-function-generator.dir/source/uart.c.obj -c /workspace/source/uart.c
 
 CMakeFiles/ams-function-generator.dir/source/uart.c.i: cmake_force
@@ -127,21 +183,29 @@ CMakeFiles/ams-function-generator.dir/source/uart.c.s: cmake_force
 
 # Object files for target ams-function-generator
 ams__function__generator_OBJECTS = \
-"CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj" \
-"CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/encoder.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj" \
 "CMakeFiles/ams-function-generator.dir/source/main.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/pwm.c.obj" \
+"CMakeFiles/ams-function-generator.dir/source/spi.c.obj" \
 "CMakeFiles/ams-function-generator.dir/source/uart.c.obj"
 
 # External object files for target ams-function-generator
 ams__function__generator_EXTERNAL_OBJECTS =
 
-ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/TFT_touch_driver.c.obj
-ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/TFTdriver.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/encoder.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/i2c_master.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/lcd_menu.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/liquid_crystal_i2c.c.obj
 ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/main.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/pwm.c.obj
+ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/spi.c.obj
 ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/source/uart.c.obj
 ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/build.make
 ams-function-generator.elf: CMakeFiles/ams-function-generator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ams-function-generator.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable ams-function-generator.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ams-function-generator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

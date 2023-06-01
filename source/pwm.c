@@ -1,4 +1,5 @@
 #include <avr/io.h>
+#include "pin_definitions.h"
 
 void configurePWM(uint16_t dutyCycle, uint16_t frequency) {
     // Calculate the prescaler and compare value based on the desired frequency
@@ -12,5 +13,5 @@ void configurePWM(uint16_t dutyCycle, uint16_t frequency) {
     OCR1A = compareValue; // Set compare value for the duty cycle
 
     // Configure the PWM pin as an output
-    DDRB |= (1 << PB5);
+    DDRB |= (1 << PWM_PIN);
 }

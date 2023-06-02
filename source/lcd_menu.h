@@ -1,21 +1,43 @@
 #include <stdbool.h>
 #include <avr/io.h>
 #include <stdio.h>
+#include "liquid_crystal_i2c.h"
 
-// Function pointer type for menu item action functions
-typedef void (*MenuActionFn)();
+#ifndef LCD_MENU_H_
+#define LCD_MENU_H_
 
-// Struct to represent a menu item
-typedef struct MenuItem {
-    const char* name;
-    struct MenuItem* parent;
-    struct MenuItem** children;
-    uint8_t numChildren;
-    MenuActionFn action;
-} MenuItem;
+#define MAX_ITEMS 10
 
-// Function prototypes
-void handleEncoderTurn(bool clockwise);
-void handleEncoderPress();
-void displayMenu();
-void executeMenuAction();
+typedef struct {
+    bool Encoder;
+    char Name[100];
+    int Goto;
+    int currentValue;
+    int From;
+    int To;
+    char AltName[100];
+} Item;
+
+typedef struct {
+    Item items[MAX_ITEMS];
+    int itemNum;
+    char Name[100];
+} Menu;
+
+
+extern Menu menus[];
+
+extern volatile int currentMenu;
+extern volatile int currentItem;
+
+void displayMenu(struct LiquidCrystalDevice_t* device);
+
+int getCurrentMenu();
+
+int getCurrentItem();
+int getNumberOfItems();
+void setCurrentMenu(int menu);
+int executeItemLink(int curMenu, int curItem);
+void setCurrentItem(int item);
+
+#endif /* LCD_MENU_H_ */
